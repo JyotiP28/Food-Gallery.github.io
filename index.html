@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang='en'>
+        <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Food Gallery </title>   
+        <link rel="icon" href="https://drive.google.com/uc?export=download&id=1GWwUPt_IpZ78VWaYVbbmRLdfkCz--QnV">
+        <link rel="stylesheet" href="foodgallery.css" >
+        <script src="gallery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+      </head>
+    <body>
+        
+    <div class="gallery">
+     <ul class="controls">
+     <li class="button active" data-filter="all" >All</li>
+    <li class="button" data-filter="ice-cream">Ice-cream</li>
+    <li class="button" data-filter="cake">Cake</li>
+    <li class="button" data-filter="chocolate">Chocolate</li>
+    <li class="button" data-filter="pizza">Pizza</li>
+   
+     </ul>
+   
+     <div class="image-container">
+        <a href="image/icecream.jpg" class="card ice-cream" >  
+           <img  src="image/icecream.jpg"  alt="..."> </a>
+
+        <a href="image/icecream1.jpg" class="card ice-cream ">  
+          <img src="image/icecream1.jpg"  alt="..."> </a> 
+
+
+        <a href="image/icecream2.jpg" class="card ice-cream">
+           <img  src="image/icecream2.jpg"  alt="..."> </a>
+
+        <a href="image/icecream3.jpg" class="card ice-cream"> 
+          <img  src="image/icecream3.jpg"  alt="..."></a>
+
+        <a href="image/choco1.jpg"    class="card chocolate" >  
+          <img  src="image/choco1.jpg"  alt="..."></a>
+
+        <a href="image/choco1.jpg"   class="card chocolate"> 
+          <img  src="image/choco1.jpg"  alt="..."> </a>
+
+        <a href="image/choco2.jpg"   class="card chocolate"> 
+          <img  src="image/choco2.jpg"  alt="..."> </a>
+
+        <a href="image/pizza.jpg"    class="card pizza" >  
+          <img  src="image/pizza.jpg"  alt="..."></a>
+
+        <a href="image/pizza1.jpg"  class="card pizza" >  
+          <img  src="image/pizza1.jpg"  alt="..."></a>
+
+        <a href="image/pizza3.jpg"  class="card pizza" > 
+           <img  src="image/pizza3.jpg" alt="..."></a>
+        <a href="image/cake.jpg"    class="card cake" >  
+            <img  src= "image/cake.jpg" alt="..."></a> 
+        <a href="image/cake1.jpg"   class="card cake" >  
+          <img  src="image/cake1.jpg"  alt="..."></a>
+          <a href="image/cake2.jpg"   class="card cake" > 
+            <img  src="image/cake2.jpg" alt="..."></a>
+        <a href="image/cake3.jpg"   class="card cake" >  
+          <img  src="image/cake3.jpg" alt="..."></a>
+        <a href="image/cake4.jpg"  class="card cake" >  
+          <img  src="image/cake4.jpg" alt="..."></a>
+            </div></div>
+             <!-- jquery cdn link  -->
+     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+  <script>
+     $(document).ready(function(){
+      $(".button").click(function(){
+        $(this).addClass("active").siblings().removeClass("active");
+        
+      var filter= $(this).attr('data-filter')
+       if(filter == 'all'){
+       $(".card").show(400);
+      }else {
+        $(".card").not('.'+filter).hide(200);
+        $(".card").filter('.'+filter).show(400);
+    
+      } 
+   });
+   });</script> -->
+    </body>
+    </html>
